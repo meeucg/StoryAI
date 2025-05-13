@@ -1,0 +1,33 @@
+:root {
+  --header-height: 60px;
+
+  /* Dark theme (default) */
+  --primary-col: black;
+  --secondary-col: #0f0f0f;
+  --tetriary-dark-col: #222;
+  --tetriary-light-col: #333;
+  --text-primary-col: white;
+  --text-secondary-col: #aaa;
+}
+
+/* Light theme variables */
+html.light-theme {
+  --primary-col: #ffffff;
+  --secondary-col: #f5f5f5;
+  --tetriary-dark-col: #e0e0e0;
+  --tetriary-light-col: #d0d0d0;
+  --text-primary-col: #212121;
+  --text-secondary-col: #757575;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+} 
+
+body {
+  /* background-color: #0f0f0f; */
+  background-color: var(--primary-col);
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
