@@ -399,5 +399,6 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 .idea
-WebProjectASP/appsettings.json
+WebProjectASP.Api/appsettings.json
 *.Development.json
+WebProjectASP.FrontendVue/story-ai/dist/

@@ -18,7 +18,7 @@ const fetchOptions = {
  */
 export async function startSession() {
   console.log('Calling API: Start session');
-  return fetch(`${API_BASE_URL}/start`, {
+  return fetch(`${API_BASE_URL}/story/start`, {
     method: 'GET',
     ...fetchOptions
   });
@@ -32,7 +32,7 @@ export async function startSession() {
  */
 export async function generateImage(prompt, model = "gemini") {
   console.log('Calling API: Generate image with prompt:', prompt);
-  return fetch(`${API_BASE_URL}/generateImage`, {
+  return fetch(`${API_BASE_URL}/generate/image`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -53,7 +53,7 @@ export async function generateImage(prompt, model = "gemini") {
  */
 export async function selectOption(index) {
   console.log('Calling API: Select option', index);
-  return fetch(`${API_BASE_URL}/next/${index}`, {
+  return fetch(`${API_BASE_URL}/story/next/${index}`, {
     method: 'GET',
     ...fetchOptions
   });
@@ -66,7 +66,7 @@ export async function selectOption(index) {
  */
 export async function submitCustomText(text) {
   console.log('Calling API: Submit custom text:', text);
-  return fetch(`${API_BASE_URL}/next`, {
+  return fetch(`${API_BASE_URL}/story/next`, {
     method: 'POST',
     ...fetchOptions,
     body: JSON.stringify({

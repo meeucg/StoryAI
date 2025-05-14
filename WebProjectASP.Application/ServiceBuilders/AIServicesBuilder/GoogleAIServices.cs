@@ -1,7 +1,9 @@
-﻿using WebProjectASP.Domain.Abstractions.AIServicesContracts.Images.Interfaces;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using WebProjectASP.Application.AIServicesRealization.Images;
+using WebProjectASP.Domain.Abstractions.AIServicesContracts.Images.Interfaces;
 
-namespace WebProjectASP.Configuration.AIServicesBuilder;
+namespace WebProjectASP.Application.ServiceBuilders.AIServicesBuilder;
 
 public static class GoogleAIServices
 {

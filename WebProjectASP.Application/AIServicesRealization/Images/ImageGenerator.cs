@@ -1,4 +1,5 @@
-﻿using WebProjectASP.Domain.Abstractions.AIServicesContracts.Images.Enums;
+﻿using Microsoft.Extensions.DependencyInjection;
+using WebProjectASP.Domain.Abstractions.AIServicesContracts.Images.Enums;
 using WebProjectASP.Domain.Abstractions.AIServicesContracts.Images.Interfaces;
 
 namespace WebProjectASP.Application.AIServicesRealization.Images;
